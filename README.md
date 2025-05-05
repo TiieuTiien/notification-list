@@ -1,70 +1,61 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Simple React Notification App
+=====================================
 
-In the project directory, you can run:
+## Table of Contents
+-----------------
 
-### `npm start`
+* [Getting Started](#getting-started)
+* [Features](#features)
+* [Usage](#usage)
+* [Contributing](#contributing)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
+---------------
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project was bootstrapped with Create React App. To get started, follow these steps:
 
-### `npm test`
+1. Clone the repository: `git clone https://github.com/your-username/your-repo-name.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
+--------
 
-### `npm run build`
+* Simple notification system with four types of notifications: info, success, warning, and error
+* Notifications can be displayed with a custom duration
+* Notifications are stacked vertically and can be closed individually
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
+-----
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To use the notification system, simply call the `handleShowNotification` function and pass in the type of notification, the message, and optionally, the duration.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Example:
+```jsx
+<button onClick={() => handleShowNotification('info', 'This is a test info notification!')}>
+  Show Info Notification
+</button>
+```
+## Contributing
+------------
 
-### `npm run eject`
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Style Guide
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* CSS: Follow the CSS style guide outlined in the `src/Components/NotificationList/NotificationList.css` file.
+* JSX: Follow the JSX style guide outlined in the `src/App.tsx` file.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Commit Messages
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Follow the conventional commit message format: `<type>(<scope>): <subject>`
 
-## Learn More
+### API Documentation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* API documentation is not currently available. If you'd like to contribute to the API documentation, please submit a pull request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* This project is licensed under the MIT License. See the `LICENSE` file for more information.
